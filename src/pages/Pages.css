@@ -11,18 +11,18 @@
 }
 
 .section-1-img {
-  max-width: 350px; /* Allow the image to be responsive */
+  max-width: 350px;
   max-height: 200px;
 }
 
 .section-1-content {
-  flex: 1; /* Allow content to take remaining width */
+  flex: 1;
 }
 
 .section-1-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px; /* Add some space below the title */
+  margin-bottom: 10px;
 }
 
 /* All Post && Home */
@@ -75,7 +75,7 @@
   font-weight: bold;
   margin-top: 10px;
 }
-/* Media query for screens smaller than 768px (adjust as needed) */
+
 @media (max-width: 1050px) {
   .secton-1 {
     padding: 20px;
@@ -91,7 +91,7 @@
   }
 
   .section-1-img {
-    max-width: 70%; /* Ensure the image takes full width on small screens */
+    max-width: 70%;
   }
 
   .post-img {
@@ -109,6 +109,6 @@
 
 @media (max-width: 500px) {
   .section-1-img {
-    max-width: 100%; /* Ensure the image takes full width on small screens */
+    max-width: 100%;
   }
 }

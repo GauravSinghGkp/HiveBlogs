@@ -42,14 +42,12 @@
 }
 .toggle-button {
   display: none;
+  height: 50px;
 }
 
-/* Styles for the button container on smaller screens */
-
-/* Media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
   .header {
-    position: relative; /* Add position: relative to the navbar */
+    position: relative;
   }
   .navbar {
     justify-content: space-between;
@@ -59,17 +57,17 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 40px;
+    top: 60px;
     right: 0;
     background-color: #1a202c;
     padding: 0 50px;
-    padding-bottom: 10px;
-    border-radius: 12px;
+    padding-bottom: 20px;
+    border-radius: 10px;
   }
 
   .btns {
     flex-direction: column;
-    align-items: flex-start; /* Align buttons to the left */
+    align-items: flex-start;
   }
 
   .logout {
@@ -81,6 +79,6 @@
   }
 
   .toggle-button {
-    display: block; /* Correct property value for display */
+    display: block;
   }
 }

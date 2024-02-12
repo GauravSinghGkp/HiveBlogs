@@ -1,6 +1,6 @@
 .post-card {
   margin-left: 5%;
-  width: 90vw; /* Adjust the width as needed */
+  width: 90vw;
   height: 120px;
   display: flex;
   flex-direction: row;
@@ -18,13 +18,13 @@
 
 .featured-img {
   height: 120px;
-  width: 100%; /* Adjust the width to make it responsive */
-  max-width: 200px; /* Set a maximum width */
+  width: 100%;
+  max-width: 200px;
   border-radius: 12px;
 }
 
 .featured-content {
-  flex-grow: 1; /* Allow the content to take up available space */
+  flex-grow: 1;
   padding: 5px;
   align-self: flex-start;
 }
@@ -35,13 +35,12 @@
 }
 
 .author {
-  width: 15%; /* Adjust the width as needed */
-  margin-top: 10px; /* Adjust the margin as needed */
+  width: 15%;
+  margin-top: 10px;
   margin-right: 5px;
   color: #adb5bd;
 }
 
-/* Media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
   .post-card {
     flex-direction: column;
@@ -60,7 +59,7 @@
   }
 
   .featured-img-container {
-    width: 90vw; /* Set the width to 90% of the viewport width */
+    width: 90vw;
   }
 
   .featured-img {

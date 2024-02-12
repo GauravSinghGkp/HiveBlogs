@@ -64,9 +64,12 @@ function Header() {
               <Logo width="70px" />
             </Link>
           </div>
-          <button onClick={toggleButtons} className="toggle-button">
-            Toggle Buttons
-          </button>
+          <img
+            src="dropdown-toggle.png"
+            alt="dropdown-toggle"
+            onClick={toggleButtons}
+            className="toggle-button"
+          />
           <div
             className={showButtons ? "btn-container-sm" : "btn-container-lg"}>
             <ul className="btns">
