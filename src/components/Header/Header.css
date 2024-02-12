@@ -1,7 +1,7 @@
 /* Header Styles */
 .header {
   background-color: #1a202c;
-  padding: 10px;
+  padding: 12px;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -46,23 +46,16 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    position: relative;
-  }
   .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Remove the comma here */
     justify-content: space-between;
   }
 
   .btn-container-sm {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
     background-color: #1a202c;
-    padding: 0 50px;
-    padding-bottom: 20px;
-    border-radius: 10px;
   }
 
   .btns {
@@ -80,5 +73,6 @@
 
   .toggle-button {
     display: block;
+    justify-self: end;
   }
 }
