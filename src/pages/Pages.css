@@ -1,0 +1,114 @@
+/* Home.jsx */
+.container {
+}
+
+.secton-1 {
+  max-width: 80vw;
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  gap: 50px;
+}
+
+.section-1-img {
+  max-width: 350px; /* Allow the image to be responsive */
+  max-height: 200px;
+}
+
+.section-1-content {
+  flex: 1; /* Allow content to take remaining width */
+}
+
+.section-1-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some space below the title */
+}
+
+/* All Post && Home */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post-prev {
+  display: flex;
+}
+
+/* Post.jsx */
+
+.post {
+  max-width: 90vw;
+  margin: auto;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.post-img {
+  width: 40vw;
+}
+
+.post h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.post h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.post h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.post h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 1050px) {
+  .secton-1 {
+    padding: 20px;
+    flex-direction: column;
+    max-width: 100vw;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .secton-1 {
+    padding: 20px;
+  }
+
+  .section-1-img {
+    max-width: 70%; /* Ensure the image takes full width on small screens */
+  }
+
+  .post-img {
+    width: 90vw;
+  }
+
+  .post-header {
+    flex-direction: column;
+  }
+  /* post */
+  .post-img {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-1-img {
+    max-width: 100%; /* Ensure the image takes full width on small screens */
+  }
+}

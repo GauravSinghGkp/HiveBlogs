@@ -1,0 +1,70 @@
+.post-card {
+  margin-left: 5%;
+  width: 90vw; /* Adjust the width as needed */
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background-color: white;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.featured-img-container {
+  min-width: 200px;
+}
+
+.featured-img {
+  height: 120px;
+  width: 100%; /* Adjust the width to make it responsive */
+  max-width: 200px; /* Set a maximum width */
+  border-radius: 12px;
+}
+
+.featured-content {
+  flex-grow: 1; /* Allow the content to take up available space */
+  padding: 5px;
+  align-self: flex-start;
+}
+
+.featured-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.author {
+  width: 15%; /* Adjust the width as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-right: 5px;
+  color: #adb5bd;
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .post-card {
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+  }
+
+  .author {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .featured-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .featured-img-container {
+    width: 90vw; /* Set the width to 90% of the viewport width */
+  }
+
+  .featured-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
