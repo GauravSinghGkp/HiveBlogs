@@ -5,3 +5,9 @@
   justify-content: space-between;
   gap: 20px;
 }
+
+Header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}

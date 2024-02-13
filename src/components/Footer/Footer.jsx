@@ -14,7 +14,14 @@ function Footer() {
             </div>
             <div>
               <p className="text-sm text-gray-600">
-                &copy; Copyright 2024. All Rights Reserved by Gaurav Singh.
+                &copy; Copyright 2024. All Rights Reserved by{" "}
+                <a
+                  className="text-white hover:text-gray-300"
+                  href="https://www.linkedin.com/in/gauravsinghgkp/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Gaurav Singh
+                </a>
               </p>
             </div>
           </div>
