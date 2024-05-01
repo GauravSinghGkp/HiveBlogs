@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const authStatus = useSelector((state) => state.auth.status);
@@ -46,12 +48,12 @@ function Header() {
     {
       name: "All Posts",
       slug: "/all-posts",
-      active: authStatus,
+      active: true,
     },
     {
       name: "Add Post",
       slug: "/add-post",
-      active: authStatus,
+      active: true,
     },
   ];
 
@@ -64,7 +66,8 @@ function Header() {
               <Logo width="70px" />
             </Link>
           </div>
-          <img
+          <FontAwesomeIcon
+            icon={faBars}
             src="dropdown-toggle.png"
             alt="dropdown-toggle"
             onClick={toggleButtons}

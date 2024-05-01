@@ -39,8 +39,9 @@
 /* Post.jsx */
 
 .post {
-  max-width: 90vw;
+  max-width: 1300px;
   margin: auto;
+  padding: 0 10px;
 }
 
 .post-header {
@@ -55,19 +56,19 @@
 .post h1 {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .post h2 {
   font-size: 22px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .post h3 {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .post h4 {
